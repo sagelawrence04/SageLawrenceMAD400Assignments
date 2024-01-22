@@ -9,7 +9,7 @@
     "test": "ng test",
     "newinterface": "ng generate interface",
     "newclass": "ng generate class",
-    "newcomponent": "ng generate component"
+    "newcomponent": "ng generate component, ng generate component ContentList, ng generate component ContentListItem"
   },
   "private": true,
   "dependencies": {
