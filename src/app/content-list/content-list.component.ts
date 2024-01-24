@@ -1,12 +1,16 @@
 import {Component, OnInit} from '@angular/core';
 import {IContent} from "../../Models/IContent";
 import {ContentListItemComponent} from "../content-list-item/content-list-item.component";
+import {NgClass, NgForOf, NgIf} from "@angular/common";
 
 @Component({
   selector: 'content-list',
   standalone: true,
   imports: [
-    ContentListItemComponent
+    ContentListItemComponent,
+    NgIf,
+    NgForOf,
+    NgClass
   ],
   templateUrl: './content-list.component.html',
   styleUrl: './content-list.component.css'

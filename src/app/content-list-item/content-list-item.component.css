@@ -1,3 +1,11 @@
 content-list-item {
   border: 2px solid black;
 }
+
+.blue-background {
+  background-color: blue;
+}
+
+.pink-background {
+  background-color: pink;
+}

@@ -1,27 +1,10 @@
-<content-list-item>
-  <h2>{{ contentItems[0].realName }}</h2>
-  <img src="{{contentItems[0].png}}"/>
-  <p>{{ contentItems[0].age }}</p>
-  <p>{{ contentItems[0].characterName }}</p>
-</content-list-item>
-
-<content-list-item>
-  <h2>{{ contentItems[1].realName }}</h2>
-  <img src="{{contentItems[1].png}}"/>
-  <p>{{ contentItems[1].age }}</p>
-  <p>{{ contentItems[1].characterName }}</p>
-</content-list-item>
-
-<content-list-item>
-  <h2>{{ contentItems[2].realName }}</h2>
-  <img src="{{contentItems[2].png}}"/>
-  <p>{{ contentItems[2].age }}</p>
-  <p>{{ contentItems[2].characterName }}</p>
-</content-list-item>
-
-<content-list-item>
-  <h2>{{ contentItems[3].realName }}</h2>
-  <img src="{{contentItems[3].png}}"/>
-  <p>{{ contentItems[3].age }}</p>
-  <p>{{ contentItems[3].characterName }}</p>
+<content-list-item
+  *ngFor="let item of contentItems;
+  index as i;
+  first as isFirst"
+  [ngClass]="{'blue-background': i % 2 === 0, 'pink-background': i % 2 !== 0}">
+  <h2 *ngIf='isFirst'>{{ item.realName }}</h2>
+  <img *ngIf="i == 3" src="{{item.png}}">
+  <p *ngIf="i == 1">{{item.characterName}}</p>
+  <p *ngIf="i == 2">{{item.age}}</p>
 </content-list-item>
