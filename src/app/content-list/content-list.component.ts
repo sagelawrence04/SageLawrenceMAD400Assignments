@@ -1,10 +1,13 @@
 import {Component, OnInit} from '@angular/core';
 import {IContent} from "../../Models/IContent";
+import {ContentListItemComponent} from "../content-list-item/content-list-item.component";
 
 @Component({
   selector: 'content-list',
   standalone: true,
-  imports: [],
+  imports: [
+    ContentListItemComponent
+  ],
   templateUrl: './content-list.component.html',
   styleUrl: './content-list.component.css'
 })
@@ -19,5 +22,6 @@ export class ContentListComponent implements OnInit {
   }
 
   ngOnInit(): void{
+
   }
 }

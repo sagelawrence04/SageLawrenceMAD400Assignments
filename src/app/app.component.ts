@@ -1,7 +1,6 @@
 import {Component} from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
-import {ContentListItem} from "../Models/ContentListItem";
 import {ContentListComponent} from "./content-list/content-list.component";
 
 @Component({
