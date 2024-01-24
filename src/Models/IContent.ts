@@ -1,8 +1,5 @@
-import {OnInit} from "@angular/core";
 
-export class ContentListItem implements OnInit {
+export class IContent {
   constructor(public realName : string, public characterName : string, public age : number, public png : string) {
-  }
-  ngOnInit(): void {
   }
 }
