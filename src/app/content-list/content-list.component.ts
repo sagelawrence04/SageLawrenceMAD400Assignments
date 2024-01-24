@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {IContent} from "../../Models/IContent";
 import {ContentListItemComponent} from "../content-list-item/content-list-item.component";
-import {NgClass, NgForOf, NgIf} from "@angular/common";
+import {NgClass, NgForOf, NgIf, NgOptimizedImage} from "@angular/common";
 
 @Component({
   selector: 'content-list',
@@ -10,22 +10,30 @@ import {NgClass, NgForOf, NgIf} from "@angular/common";
     ContentListItemComponent,
     NgIf,
     NgForOf,
-    NgClass
+    NgClass,
+    NgOptimizedImage
   ],
   templateUrl: './content-list.component.html',
   styleUrl: './content-list.component.css'
 })
 export class ContentListComponent implements OnInit {
-  contentItems: IContent[] = [
-    new IContent("Daisy Edgar Jones", "Marianne Sheridan", 25, "xxx"),
-    new IContent("Paul Mescal", "Connell Waldron", 27, "xxx"),
-    new IContent("Sarah Greene", "Lorraine Waldron", 39, "xxx"),
-    new IContent("Franke Blake", "Alan Sheridan", 27, "xxx")
-  ];
+
+  contentItems: IContent[] = [];
   constructor() {
   }
 
   ngOnInit(): void{
+    console.log('ContentListComponent initialized');
+    this.initializeContentItems();
+  }
 
+  private initializeContentItems(): void {
+    // Example: Setting default values for contentItems
+    this.contentItems = [
+      new IContent("Daisy Edgar Jones", "Marianne Sheridan", 25, "images/marianne.webp"),
+      new IContent("Paul Mescal", "Connell Waldron", 27, "images/connell.webp"),
+      new IContent("Sarah Greene", "Lorraine Waldron", 39, "images/lorraine.webp"),
+      new IContent("Franke Blake", "Alan Sheridan", 27, "images/alan.webp")
+    ];
   }
 }
