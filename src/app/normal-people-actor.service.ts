@@ -12,7 +12,7 @@ export class NormalPeopleActorService {
   }
 
   //method to return an Observable of the IContent array (contentItems) from the mock-content file
-  fetchData(): Observable<IContent[]> {
-    return this.http.get<IContent[]>('data/mock-content.ts');
+  fetchData(): Observable<any> {
+    return this.http.get('./data/mock-content.ts');
   }
 }
