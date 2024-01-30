@@ -17,8 +17,7 @@ import {NgClass, NgForOf, NgIf, NgOptimizedImage} from "@angular/common";
   styleUrl: './content-list.component.css'
 })
 export class ContentListComponent implements OnInit {
-  contentItems: IContent[] = [];
-  contentItem: any;
+  // contentItems: IContent[] = [];
   constructor() {
   }
 
@@ -29,11 +28,11 @@ export class ContentListComponent implements OnInit {
 
   private initializeContentItems(): void {
     // Example: Setting default values for contentItems
-    this.contentItems = [
-      new IContent("Daisy Edgar Jones", "Marianne Sheridan", 25, "assets/images/marianne.webp"),
-      new IContent("Paul Mescal", "Connell Waldron", 27, "assets/images/connell.webp"),
-      new IContent("Sarah Greene", "Lorraine Waldron", 39, "assets/images/lorraine.jpeg"),
-      new IContent("Franke Blake", "Alan Sheridan", 27, "assets/images/alan.webp")
-    ];
+    // this.contentItems = [
+    //   new IContent("Daisy Edgar Jones", "Marianne Sheridan", 25, "assets/images/marianne.webp"),
+    //   new IContent("Paul Mescal", "Connell Waldron", 27, "assets/images/connell.webp"),
+    //   new IContent("Sarah Greene", "Lorraine Waldron", 39, "assets/images/lorraine.jpeg"),
+    //   new IContent("Franke Blake", "Alan Sheridan", 27, "assets/images/alan.webp")
+    // ];
   }
 }
