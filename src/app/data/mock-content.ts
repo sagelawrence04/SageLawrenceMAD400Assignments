@@ -1,8 +1,10 @@
 import {IContent} from "../../Models/IContent";
 
-export const contentItems: IContent[] = [
-  {realName: "Daisy Edgar Jones", characterName: "Marianne Sheridan", age: 25, png: "assets/images/marianne.webp"},
-  {realName: "Paul Mescal", characterName: "Connell Waldron", age: 27, png: "assets/images/connell.webp"},
-  {realName: "Sarah Greene", characterName: "Lorraine Waldron", age: 39, png: "assets/images/lorraine.jpeg"},
-  {realName:"Franke Blake", characterName: "Alan Sheridan", age: 27, png: "assets/images/alan.webp"}
+//Changed the class to create new objects
+//changed var name to CONTENTITEMS as it is a constant
+export const CONTENTITEMS: IContent[] = [
+  new IContent("Daisy Edgar Jones", "Marianne Sheridan", 25, "assets/images/marianne.webp"),
+  new IContent("Paul Mescal",  "Connell Waldron", 27, "assets/images/connell.webp"),
+  new IContent("Sarah Greene", "Lorraine Waldron", 39,  "assets/images/lorraine.jpeg"),
+  new IContent("Franke Blake", "Alan Sheridan",  27,  "assets/images/alan.webp")
 ];
