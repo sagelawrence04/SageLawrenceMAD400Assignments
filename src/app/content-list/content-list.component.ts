@@ -26,10 +26,6 @@ export class ContentListComponent implements OnInit {
 
   ngOnInit(): void{
     console.log('ContentListComponent initialized');
-    // this.normalPeopleActorService.fetchData().subscribe(data => {
-    //   console.log(data);
-    //   this.contentItems = data;
-    // });
   }
 
 }
