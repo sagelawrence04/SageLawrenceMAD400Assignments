@@ -4,7 +4,6 @@ import { RouterOutlet } from '@angular/router';
 import {ContentListComponent} from "./content-list/content-list.component";
 import {IContent} from "../Models/IContent";
 import {ContentListItemComponent} from "./content-list-item/content-list-item.component";
-import {CONTENTITEMS} from "./data/mock-content";
 import {NormalPeopleActorService} from "./normal-people-actor.service";
 
 @Component({
