@@ -1,0 +1,16 @@
+<h2>Form</h2>
+
+<form [formGroup] = 'form!'
+      (ngSubmit)="onSubmit(form!.value)">
+
+  <label for="where">Where Would You Like To Go?</label>
+  <br>
+  <select name="where" id="where" formControlName="where">
+    <option value="home">Home</option>
+    <option value="cast">Cast</option>
+    <option value="summary">Show Summary</option>
+  </select>
+
+  <br>
+  <button type="submit">Go!</button>
+</form>
